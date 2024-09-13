@@ -11,6 +11,7 @@ int main() {
         return 1;
     }
 
+    while(1) {
     // Lecture de la température depuis le registre 0x05
     int tempRaw = wiringPiI2CReadReg16(fd, 0x05);
     if (tempRaw == -1) {
@@ -28,13 +29,10 @@ int main() {
 
     std::cout << "Température : " << tempC << " °C" << std::endl;
 
+    }
     return 0;
     
     
   
 }
 
-
-
-for (int i = 0; i < 2; i++) {
-	cout << i; }
