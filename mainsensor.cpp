@@ -1,6 +1,8 @@
 #include <iostream>
 #include <wiringPi.h>
 #include <wiringPiI2C.h>
+#include <chrono>
+#include <thread>
 
 int main() {
     int i2cAddress = 0x18; // Adresse I2C par défaut du MCP9808
@@ -29,6 +31,9 @@ int main() {
 
     std::cout << "Température : " << tempC << " °C" << std::endl;
 
+   std::chrono::milliseconds timespan(2000); 
+
+   std::this_thread::sleep_for(timespan);
     }
     return 0;
     
