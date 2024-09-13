@@ -7,9 +7,17 @@ class sensor
 {  
 
 Public:
-		void lireTemp(get_temp);
-		void affTemp(displaytemp);
+		sensor();
+		~sensor();
+	void lireTemp(get_temp);
+	void affTemp(displaytemp);
+Private:
+
+
+	sensor::sensor(int adrTemp);
+	float Temp;
+
 
 }
 
-
+endif
