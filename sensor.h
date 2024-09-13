@@ -8,13 +8,12 @@ class sensor
 
 Public:
 		sensor();
+		sensor(int adrTemp);
 		~sensor();
-	void lireTemp(get_temp);
-	void affTemp(displaytemp);
+	void lireTemp();
+	void affTemp();
 Private:
 
-
-	sensor::sensor(int adrTemp);
 	float Temp;
 
 
